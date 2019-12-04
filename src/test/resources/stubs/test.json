@@ -1,0 +1,14 @@
+{
+  "request" : {
+    "url" : "/test",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "headers": {
+      "Content-Type": "text/plain"
+    },
+    "transformers": ["response-template"],
+    "body" : "Hello World. var='{{var}}', request.url='{{request.url}}', systemValue={{systemValue type='PROPERTY' key='wiremock.value'}}"
+  }
+}
